@@ -1,0 +1,130 @@
+div#page-content{
+    margin: auto;
+    background-color: #dee3e6;
+    width: 90%;
+    position: static;
+    box-shadow: 2px 2px 4px black;
+    border-radius: 10px 50% / 60px 30px;
+}
+header, main, footer{
+    padding: 5px 10px;
+}
+
+header{
+    border: 0px solid black;
+    border-bottom-width: 1px;
+}
+
+/* Form styles */
+form fieldset{
+    max-width: 100%;
+}
+form textarea{
+    resize:vertical;
+    box-sizing: border-box;
+    max-width: 100%;
+    min-height: 50px;
+    width: 100%;
+}
+form button{
+    margin: 10px 0px; 
+}
+form fieldset.setting input{
+    margin-right: 10px;
+}
+fieldset.setting input.mediumBox{
+    width: 75px;
+}
+fieldset.setting input.smallBox{
+    width: 50px;
+}
+
+/* Image styles */
+img + figcaption {
+    font-style: italic;
+    font-size: 0.9em;
+  }
+img,figcaption,figure + button{
+    position: relative;
+    display: block;
+    transform: translate(-50%,0%);
+    left: 50%;
+    text-align: center;
+}
+
+/* Overlay styles */
+div#overlay{
+    display: none; /*Starts hidden*/
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    z-index: 10;
+    top:0;
+    left:0;
+    background-color: rgba(0,0,0,0.5);
+}
+div#allTranslations{
+    position: fixed;
+    width: 90vw;
+    height: 90vh;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 11;
+    background-color: rgb(245, 245, 245);
+    box-shadow: 2px 2px 16px black;
+    border-radius: 20px 15px 10px 15px;
+}
+
+div#allTranslations button{
+    position: absolute;
+    left: 50%;
+    bottom: 3%;
+    transform: translate(-50%, -5%);
+    box-shadow: 1px 1px 6px gray;
+}
+div#allTranslations article{
+    position: relative;
+    margin-top: 15px;
+    width: 100%;
+    height: 85%;
+    overflow: scroll;
+    box-shadow: inset -2px -2px 5px gray
+}
+div#allTranslations ul{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    list-style:none;
+}
+div#allTranslations li{
+    margin: 15px;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+div#allTranslations li span + span{
+    margin-left: 10px;
+    background-color: none;
+}
+div#allTranslations li span:first-child{
+    background-color: none;
+}
+
+
+
+/* Footer styles */
+footer{
+    border:  #010101 solid 0px;
+    border-top-width: 1px;
+    font-size: 0.8em;
+    padding: 15px;
+}
+footer a:hover{
+    color:teal;
+}
+footer a:active{
+    color:yellowgreen;
+}
+footer a:visited{
+    color:purple;
+}

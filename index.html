@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    
+    <title>Gesällprov</title>
+</head>
+<body>
+    <div id="page-content">
+        <header>
+            <h1>Gesällprov</h1>
+        </header>
+    
+        
+    
+        <main>
+            <article>
+                
+                <h3>Morse interpreter</h3>
+                <div id="accordion-resizer" class="ui-widget-content">
+                    <div id="accordion">
+                        <h3>Morse Codes</h3>
+                        <div>
+                            <p>Morse code can be used to translate signals of sound or light into an alphabeth. It consists of short (dot) and long (dash) signals with a distinct separator between letters and another distinct separator between words.</p>
+                            <figure>
+                                <img src="media/315px-International_Morse_Code.svg.png"
+                                    alt="The standard english Morse Code.">
+                                <figcaption>A non-extensive image of morse code</figcaption>
+                            </figure>
+
+                            <button class="toggleAllTranslations">Toggle complete list</button>
+                            <div id="overlay">
+                                <div id="allTranslations">
+                                    <article></article>
+                                    <button class="toggleAllTranslations">Toggle complete list</button>
+                                </div>
+                            </div>
+                        </div>
+                        <h3>Letters to Morse</h3>
+                        <div>
+                            <form action="" class="nosubmit">
+                                <fieldset class="setting">
+                                    <legend>Settings</legend>
+                                    <label for="letterSpacing1">Letter separator</label>
+                                    <input type="number" name="letterSpacing" id="letterSpacing1" class="smallBox" min="1" value="2">
+
+                                    <label for="checkSpecChars1">Symbols</label> 
+                                    <input type="checkbox" id="checkSpecChars1">                                
+                                </fieldset>
+                                
+                                <fieldset class="application">
+                                    <legend>Application</legend>
+                                    <label for="inputLetters1">Give text</label>
+                                    <br>
+                                    <textarea name="inputLetters1" id="inputLetters1" cols="30" rows="5" placeholder="Input, ex: Hello"></textarea>
+                                    <br>
+                                    <button id="translateLetters1">Translate</button>
+                                    <br>
+                                    <label for="outputLetters1">Translated text</label>
+                                    <br>
+                                    <textarea name="outputLetters1" id="outputLetters1" cols="30" rows="5" placeholder="output, ex: &mdash; &bull;" disabled></textarea>
+                                </fieldset>
+                            </form>
+                        </div>
+                        <h3>Morse to letters</h3>
+                        <div>
+                            <form action="" class="nosubmit">
+                                <fieldset class="setting">
+                                    <legend>Instructions</legend>
+                                    <p>For input, use format: 
+                                        <dl>
+                                            <dt>Valid symbols are:</dt>
+                                            <dd>dots(.), Dash(-), space( ) and forward slash (/).</dd>
+                                            <dt>Invalid symbols</dt>
+                                            <dd>are all other symbols, these are not translated and may affect surrounding letters if missing space between them.</dd>
+                                            <dt>Letters</dt> 
+                                            <dd>separated by spaces (  ).</dd>
+                                            <dt>Words</dt>
+                                            <dd>separated by a forward slash (/).</dd>
+                                            <dt>Example: .- / ... --- ...</dt>
+                                            <dd>is translated into: a sos </dd>
+                                        </dl>
+                                    </p>                            
+                                </fieldset>
+                                
+                                <fieldset class="application">
+                                    <legend>Application</legend>
+                                    <label for="inputMorse1">Give text</label>
+                                    <br>
+                                    <textarea name="inputMorse1" id="inputMorse1" cols="30" rows="5" placeholder="Input, ex: Hello"></textarea>
+                                    <br>
+                                    <button id="translateMorse1">Translate</button>
+                                    <br>
+                                    <label for="outputMorse1">Translated text</label>
+                                    <br>
+                                    <textarea name="outputMorse1" id="outputMorse1" cols="30" rows="5" placeholder="output, ex: &mdash; &bull;" disabled></textarea>
+                                </fieldset>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+        
+            </article>
+        </main>
+    
+    
+        <footer>
+            <p>Axel Brandberg: <a href="mailto:axbr1027@student.su.se">axbr1027@student.su.se</a></p>
+        </footer>
+    
+    </div>
+
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>
